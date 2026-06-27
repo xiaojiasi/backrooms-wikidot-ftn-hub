@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+ 
+:root {
+   --theme-base: "lazuli";
+   --theme-id: "found liminal";
+   --theme-name: "Found Liminal Theme";
+ 
+   --body-font: 'PT Sans', 'Noto Sans SC', sans-serif;
+   --header-font: 'Space Grotesk', 'Noto Sans SC', sans-serif;
+   --title-font: 'PT Mono', 'Noto Sans SC',  sans-serif, monospace;
+   --mono-font: 'Ubuntu Mono', '幼圆', serif, monospace;
+ 
+   --white-monochrome: 20, 20, 20;
+   --pale-gray-monochrome: 70, 70, 70;
+   --light-gray-monochrome: 80, 80, 80;
+   --gray-monochrome: 120, 120, 120;
+   --black-monochrome: 100, 100, 100;
+   --bright-accent: 220, 220, 220;
+   --medium-accent: 190, 190, 190;
+   --dark-accent: 160, 160, 160;
+   --pale-accent: 105, 105, 105;
+   --blurple: 60, 60, 60;
+   --swatch-menubg-dark-color: var(--pale-accent);
+ 
+   --swatch-topmenu-border-color: var(--medium-accent);
+ 
+   --link-color: 150, 150, 150;
+   --hover-link-color: 150, 150, 150;
+   --visited-link-color: 120, 120, 120;
+   --newpage-color: 180, 180, 180;
+ 
+   --background-gradient-distance: 0rem;
+ 
+   --gradient-header: linear-gradient(to top,
+      rgba(var(--medium-accent)) 0%,
+      rgba(var(--medium-accent), 0.90) 100%
+   );
+   --diagonal-stripes: linear-gradient(transparent 0);
+ 
+   --rating-module-button-plus-color: 90, 90, 90;
+   --rating-module-button-negative-color: 100, 100, 100;
+   --rating-module-button-cancel-color: 150, 150, 150;
+   --rating-module-button-credit-color: 125, 125, 125;
+}
+ 
+#skrollr-body {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("http://backrooms-wiki-ftn.wikidot.com/local--files/theme:found-liminal/background-header.jpg");
+ background-repeat: repeat-x;
+background-size: inherit;
+}
+ 
+#side-bar .side-block div a img {
+   filter: grayscale(0%);
+}
+ 
+#container {
+   background-image: radial-gradient(circle, rgb(var(--medium-accent), 0.05) 50%, transparent 0);
+   background-size: 0.25em 0.25em;
+   background-repeat: repeat;
+   background-attachment: fixed;
+}
+ 
+div#page-options-bottom-2 > a, div#page-options-bottom > a {
+   border-radius: 0em;
+   -moz-border-radius: 0em;
+   border: none;
+}
+ 
+div#page-options-bottom-2 > a:active, div#page-options-bottom-2 > a:hover, div#page-options-bottom > a:active, div#page-options-bottom > a:hover {
+   border: none;
+}
+ 
+#header, #top-bar {
+   background-attachment: scroll;
+}
+ 
+#header {
+   background-image: none;
+}
+ 
+#header h1, #header h1 a {
+   position: absolute;
+   top: 1rem;
+   margin: 0;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   z-index: 0;
+}
+ 
+#header h2, #header h2 span, #header h2 span::before {
+   position: absolute;
+   top: 2rem;
+   margin: 0;
+   width: 100%;
+   left: 0rem;
+   display: flex;
+   justify-content: center;
+}
+
+#header h1 a::before, #header h2 span::before {
+   text-shadow: .0.8rem 0.3rem 0.3rem #111111rgb;
+}
+ 
+#edit-cancel-button:hover,
+#edit-diff-button:hover,
+#edit-preview-button:hover,
+#edit-save-draft-button:hover,
+#edit-save-continue-button:hover,
+#edit-save-button:hover {
+  transition: transform 0.3s;  
+  transform: translateY(-.3em);
+}
+ 
+#edit-button:hover,
+#pagerate-button:hover,
+#tags-button:hover,
+#history-button:hover,
+#files-button:hover,
+#print-button:hover,
+#site-tools-button:hover,
+#more-options-button:hover,
+#edit-sections-button:hover,
+#edit-append-button:hover,
+#edit-meta-button:hover,
+#watchers-button:hover,
+#backlinks-button:hover,
+#view-source-button:hover,
+#parent-page-button:hover,
+#page-block-button:hover,
+#rename-move-button:hover,
+#delete-button:hover,
+#discuss-button:hover
+ {
+  transition: transform 0.3s;  
+  transform: translateY(-.3em);
+}
+ 
+.change-textarea-size:hover{
+  transition: transform 0.3s;  
+  transform: translateY(-.3em);
+}
+ 
+a.newpage {
+   background: transparent;
+   text-decoration: none
+}
+ 
+a.newpage {
+   color: rgb(var(--newpage-color))
+}
+ 
+blockquote {
+   box-shadow: 0.05rem 0.1rem 0.3rem rgba(0,0,0,.25);
+   background-color:rgba(var(--bright-accent), .25);
+   border: 5px solid rgb(var(--light-accent));
+}
+ 
+
+ 
+.styled-quote {
+   background-color:rgb(var(--pale-gray-monochrome));
+   border-left: 0.5rem solid rgba(var(--black-monochrome));
+   padding: 0.1rem 1rem;
+   margin: 0.5rem 0 0.5rem 0.25rem;
+   box-shadow: 0.05rem 0.1rem 0.3rem rgba(0,0,0,.25);
+}
+ 
+.dark-styled-quote {
+   background-color:rgb(var(--pale-gray-monochrome));
+   border-left: 0.5rem solid rgba(var(--blurple));
+   color:rgb(var(--black-monochrome));
+   padding: 0.1rem 1rem;
+   margin: 0.5rem 0 0.5rem 0.25rem;
+   box-shadow: 0.05rem 0.1rem 0.3rem rgba(0,0,0,.25);
+}
+ 
+.dark-styled-quote a{
+color: rgb(var(--black-monochrome));
+}
+ 
+.lightblock {
+   background-color:rgb(var(--black-monochrome));
+   color:rgb(var(--white-monochrome));
+   padding: 0.01rem 1rem;
+   margin: 0.5rem 0 0.5rem 0.25rem;
+   box-shadow: 0 0.2rem 0.3rem rgba(0,0,0,.25);
+}
+ 
+.darkblock {
+   background-color:rgb(var(--pale-gray-monochrome));
+   color:rgb(var(--black-monochrome));
+   padding: 0.01rem 1rem;
+   margin: 0.5rem 0 0.5rem 0.25rem;
+   box-shadow: 0 0.2rem 0.3rem rgba(0,0,0,.25);
+}
+ 
+.darkblock a {
+color: rgb(var(--black-monochrome));
+}
